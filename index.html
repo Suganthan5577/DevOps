@@ -1,10 +1,71 @@
-echo "<!DOCTYPE html>
-<html>
-  <head>
-    <title>My First CI/CD Deployment</title>
-  </head>
-  <body>
-    <h1 style='color: green;'>✅ Deployed via Jenkins to EC2 using Nginx!</h1>
-    <p>Deployed from: <strong>GitHub Repo → Jenkins → EC2 Nginx Server</strong></p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Cricket Score</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #0077cc;
+    }
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 60%;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #0077cc;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>India vs Australia</h1>
+  <h2>Live Scoreboard</h2>
+  <table>
+    <tr>
+      <th>Player</th>
+      <th>Runs</th>
+      <th>Balls</th>
+      <th>Fours</th>
+      <th>Sixes</th>
+    </tr>
+    <tr>
+      <td>Rohit Sharma</td>
+      <td>72</td>
+      <td>45</td>
+      <td>8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Virat Kohli</td>
+      <td>56</td>
+      <td>39</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Hardik Pandya</td>
+      <td>23</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </table>
+  <p>Target: 180 | Current: 151/3 (17.2 overs)</p>
+</body>
 </html>" > index.html
+git add index.html
+git commit -m "Add cricket scorecard UI"
+git push origin main
